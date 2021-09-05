@@ -14,7 +14,7 @@ alias mv='mv -i'
 alias cp='cp -i'
 
 # alias cat='bat --theme "Monokai Extended" --paging never'
-alias cat='bat --theme "Monokai Extended"'
+alias cat='batcat --theme "Monokai Extended"'
 
 
 alias windev32='cd /mnt/c/users/rando; cmd.ese /k "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64_x86'
@@ -80,17 +80,17 @@ if [ -d "${PYENV_ROOT}" ]; then
 fi
 
 # Load rust env
-if [ -f $HOME/.cargo/env ]; then 
-    source $HOME/.cargo/env
-fi
+#if [ -f $HOME/.cargo/env ]; then 
+#    source $HOME/.cargo/env
+#fi
 
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 setxkbmap -option "ctrl:nocaps"
 
-source $HOME/.cargo/env
+# source $HOME/.cargo/env
 source ~/.bashrc
 
 # export PATH="$PATH:/mnt/c/Program Files/IDA 7.0"
 export PATH="$PATH:/home/user/clang/bin"
-source "$HOME/.cargo/env"
+# source "$HOME/.cargo/env"
