@@ -91,6 +91,6 @@ setxkbmap -option "ctrl:nocaps"
 source $HOME/.cargo/env
 source ~/.bashrc
 
-export PATH="$PATH:/mnt/c/Program Files/IDA 7.0"
+# export PATH="$PATH:/mnt/c/Program Files/IDA 7.0"
 export PATH="$PATH:/home/user/clang/bin"
 source "$HOME/.cargo/env"
